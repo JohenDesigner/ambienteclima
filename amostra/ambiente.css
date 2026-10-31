@@ -284,3 +284,11 @@ dialog.amplia .fechar { position: fixed; top: 14px; right: 14px; width: 48px; he
   .d-foto { min-height: 240px; }
 }
 #detalhe .painel--estreito { margin-inline: auto; }
+
+@media (max-width: 860px) {
+  .momento--centro { left: var(--gutter); right: var(--gutter); width: auto; transform: translateY(24px); }
+  .momento--centro.ativo { transform: none; }
+  .momento .painel { max-width: none; }
+  .cta--centro .botao { flex: 1 1 100%; }
+}
+@media (max-width: 860px) { .momento, .momento--direita, .momento--centro { bottom: calc(150px + env(safe-area-inset-bottom)); } }
